@@ -11,13 +11,13 @@
 			<% end %>
 			<div class="article-meta">
 				<p class="article-title"><%= @article.title %></p><br><br>
-				<p class="article-author-name h3">作者 | <%= @article.user.name %></p>
+				<p class="article-author-name h3" style="display:none;">作者 | <%= @article.user.name %></p>
 			</div>
 			<% if @article.intro != '' %>
 				<div class="article-intro"><%= @article.intro %></div>
 			<% end %>
 			<div class="article-content"><%=raw @article.content %></div>
-			<div class="article-author">
+			<div class="article-author" style="display:none;">
 				<div class="article-author-avatar"><%= image_tag @article.user.avatar_url(:thumb) %></div>
 				<div class="article-author-profile">
 					<p class="h2">作者 | <%= @article.user.name %></p><br>
