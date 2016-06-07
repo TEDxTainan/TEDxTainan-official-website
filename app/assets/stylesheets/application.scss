@@ -11,6 +11,7 @@
  * file per style scope.
  *
  *= require jquery.Jcrop
+ *= require font-awesome
  *= require_tree .
  *= require_self
  */
@@ -177,9 +178,10 @@ html,body{
   top: 16px;
 }
 
-#icon{
-  height:25px;
-  margin-right:10px;
+.right a i{
+  font-size:30px;
+  color:white;
+  margin-right:25px;
 }
 
 /*手機版選單*/
@@ -267,10 +269,12 @@ html,body{
   padding-bottom:0px;
   float: right;
 }
-.footer-icons img{
-  margin-right:10%;
-  width:65px;
-  height:65px;
+
+.footer-icons a i{
+  padding-top:5px;
+  margin-right:15%;
+  color:white;
+  font-size:50px;
 }
 
 .block{
@@ -302,13 +306,19 @@ html,body{
     margin-top:0px;
     text-align:center;
   }
+
   .footer-icons{
     width:100%;
     float: none;
     margin:0 auto;
   }
-  #footerlogo,.footer-icons img{
-    margin:0px;
+
+  .footer-icons a i,#footerlogo{
+    margin:0;
+  }
+
+  #footer-fb{
+    margin-right:40px;
   }
 }
 

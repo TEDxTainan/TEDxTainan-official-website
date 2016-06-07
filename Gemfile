@@ -16,6 +16,7 @@ gem 'bcrypt'
 gem 'tinymce-rails', git: 'https://github.com/ChouAndy/tinymce-rails.git'
 gem 'meta-tags'
 gem 'acts-as-taggable-on', '~> 3.4'
+gem "font-awesome-rails"
 
 gem 'sdoc', '~> 0.4.0', group: :doc
 
